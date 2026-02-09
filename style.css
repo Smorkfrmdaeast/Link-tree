@@ -1,109 +1,165 @@
-/* RESET & BODY */
 body {
+
   margin: 0;
+
   min-height: 100vh;
+
   background: #020b2d;
+
   font-family: Arial, Helvetica, sans-serif;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   color: #c7d9ff;
-  position: relative;
-  overflow-x: hidden;
+
 }
 
 /* BLUE BANDANA STYLE */
+
 body::before {
+
   content: "";
+
   position: fixed;
+
   inset: 0;
+
   background-image: radial-gradient(circle, #4da6ff 1px, transparent 1px);
+
   background-size: 22px 22px;
+
   opacity: 0.18;
+
   z-index: 0;
+
 }
 
-/* MAIN CONTAINER */
 .container {
+
   position: relative;
+
   z-index: 1;
+
   width: 100%;
+
   max-width: 420px;
+
   padding: 28px 22px;
+
   text-align: center;
+
 }
 
-/* AVATAR */
 .avatar {
+
   width: 120px;
+
   height: 120px;
+
   border-radius: 50%;
+
   border: 3px solid #4da6ff;
+
   object-fit: cover;
+
   margin-bottom: 18px;
+
 }
 
-/* HEADER */
 h1 {
+
   font-size: 22px;
+
   font-weight: 800;
+
   color: #4da6ff;
+
   margin: 0 0 10px;
+
 }
 
-/* BIO */
 .bio {
+
   font-size: 14px;
+
   line-height: 1.5;
+
   margin-bottom: 22px;
+
 }
 
-/* SKILLS */
 .skills {
+
   display: flex;
+
   flex-wrap: wrap;
+
   justify-content: center;
+
   gap: 8px;
+
   margin-bottom: 26px;
+
 }
 
 .skills span {
+
   padding: 6px 12px;
+
   border-radius: 20px;
+
   border: 1px solid #4da6ff;
+
   background-color: #021a4a;
+
   color: #e6f0ff;
+
   font-size: 12px;
+
   font-weight: 600;
+
 }
 
-/* LINKS */
 a {
-  display: block;
-  margin-bottom: 14px;
-  padding: 15px;
-  border-radius: 14px;
-  border: 1.5px solid #4da6ff;
-  background-color: #021a4a;
-  color: #e6f0ff;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
 
-a:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 15px rgba(77, 166, 255, 0.4);
+  display: block;
+
+  margin-bottom: 14px;
+
+  padding: 15px;
+
+  border-radius: 14px;
+
+  border: 1.5px solid #4da6ff;
+
+  background-color: #021a4a;
+
+  color: #e6f0ff;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
 }
 
 a:active {
+
   opacity: 0.8;
+
 }
 
-/* FOOTER */
 .footer {
+
   margin-top: 28px;
+
   font-size: 12px;
+
   color: #6fa8ff;
+
 }
