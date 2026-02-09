@@ -1,49 +1,139 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smorkfrmdaeast | LINK IN BIO</title>
 
-  <img
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #020b2d;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c7d9ff;
+      flex-direction: column;
+    }
 
-    src="https://i.imgur.com/QDHu9db.jpg"
+    /* BLUE BANDANA STYLE */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, #4da6ff 1px, transparent 1px);
+      background-size: 22px 22px;
+      opacity: 0.18;
+      z-index: 0;
+    }
 
-    alt="Profile photo"
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 28px 22px;
+      text-align: center;
+    }
 
-    class="avatar"
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #4da6ff;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
 
-  />
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #4da6ff;
+      margin: 0 0 10px;
+    }
 
-  <h1>IFEANYI NNAMANI | SMORKFRMDAEAST</h1>
+    .bio {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
 
-  <p class="bio">
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 26px;
+    }
 
-    PERSONAL TECH SHOWCASE — WEB DEVELOPER & SOFTWARE ENGINEER.<br>
+    .skills span {
+      padding: 6px 12px;
+      border-radius: 20px;
+      border: 1px solid #4da6ff;
+      background-color: #021a4a;
+      color: #e6f0ff;
+      font-size: 12px;
+      font-weight: 600;
+    }
 
-    BUILDING. LEARNING. CONNECTING.
+    a {
+      display: block;
+      margin-bottom: 14px;
+      padding: 15px;
+      border-radius: 14px;
+      border: 1.5px solid #4da6ff;
+      background-color: #021a4a;
+      color: #e6f0ff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
 
-  </p>
+    a:active {
+      opacity: 0.8;
+    }
 
-  <div class="skills">
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #6fa8ff;
+    }
+  </style>
+</head>
+<body>
 
-    <span>HTML</span>
+  <div class="container">
+    <img
+      src="https://i.imgur.com/QDHu9db.jpg"
+      alt="Ifeanyi Nnamani Profile Photo"
+      class="avatar"
+    />
 
-    <span>CSS</span>
+    <h1>IFEANYI NNAMANI | SMORKFRMDAEAST</h1>
 
-    <span>JAVASCRIPT</span>
+    <p class="bio">
+      PERSONAL TECH SHOWCASE — WEB DEVELOPER & SOFTWARE ENGINEER.<br>
+      BUILDING. LEARNING. CONNECTING.
+    </p>
 
-    <span>REACT</span>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JAVASCRIPT</span>
+      <span>REACT</span>
+      <span>EXPO / RN</span>
+    </div>
 
-    <span>EXPO / RN</span>
+    <a href="https://www.instagram.com/smork_frmdaeast" target="_blank">INSTAGRAM</a>
+    <a href="https://x.com/Smorkfrmdaeast" target="_blank">X / TWITTER</a>
+    <a href="https://github.com/Smorkfrmdaeast" target="_blank">GITHUB</a>
+    <a href="https://www.linkedin.com/in/smorkfrmdaeast" target="_blank">LINKEDIN</a>
+    <a href="https://wa.me/2349019071679" target="_blank">WHATSAPP</a>
 
+    <div class="footer">BUILT WITH PURPOSE 💙</div>
   </div>
 
-  <a href="https://www.instagram.com/smork_frmdaeast" target="_blank">INSTAGRAM</a>
-
-  <a href="https://x.com/Smorkfrmdaeast" target="_blank">X / TWITTER</a>
-
-  <a href="https://github.com/Smorkfrmdaeast" target="_blank">GITHUB</a>
-
-  <a href="https://www.linkedin.com/in/smorkfrmdaeast" target="_blank">LINKEDIN</a>
-
-  <a href="https://wa.me/2349019071679" target="_blank">WHATSAPP</a>
-
-  <div class="footer">BUILT WITH PURPOSE 💙</div>
-
-</div>
+</body>
+</html>
